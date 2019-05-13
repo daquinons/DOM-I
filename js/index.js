@@ -51,6 +51,15 @@ navItems[3].textContent = siteContent.nav["nav-item-4"];
 navItems[4].textContent = siteContent.nav["nav-item-5"];
 navItems[5].textContent = siteContent.nav["nav-item-6"];
 
+let megaElement = document.createElement('a')
+megaElement.textContent = 'Mega';
+nav.appendChild(megaElement);
+
+let coolElement = document.createElement('a');
+coolElement.textContent = 'Cool';
+nav.prepend(coolElement);
+
+navItems = nav.querySelectorAll('a');
 navItems.forEach(item => item.style.color = 'green');
 
 // cta
