@@ -1,4 +1,3 @@
-let counter = 0;
 function everyTenMs() {
   counter += 1;
   updateUI(counter);
@@ -8,7 +7,7 @@ function everyTenMs() {
   }
 }
 
-function counterToSeconds(counter) {
+function counterToSeconds() {
   return Math.floor(counter / 100);
 }
 
@@ -43,7 +42,7 @@ function resetTimer() {
   timerToZero();
 }
 
-function updateUI(counter) {
+function updateUI() {
   let counterString = counter.toString();
   let seconds = counterToSeconds(counter);
   if (seconds < 10) {
@@ -59,5 +58,6 @@ function updateUI(counter) {
   
 }
 
+let counter = 0;
 let interval;
 timerToZero();
