@@ -67,6 +67,8 @@ let cta = document.querySelector('.cta');
 let ctaText = document.querySelector('.cta-text');
 let ctaH1 = ctaText.querySelector('h1');
 ctaH1.textContent = siteContent.cta.h1;
+let brTag = '<br />';
+ctaH1.innerHTML = ctaH1.innerHTML.split(' ').join(brTag);
 
 let ctaButton = ctaText.querySelector('button');
 ctaButton.textContent = siteContent.cta.button;
